@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "observatorio-brasil"
+version = "0.1.0"
+description = "Pipeline de dados públicos em arquitetura medalhão, consumido por um dashboard em Power BI."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Rafael Landim" }]
+
+# Layout src/: o pacote só fica importável depois de instalado.
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

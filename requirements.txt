@@ -1,0 +1,13 @@
+# Instala o pacote em modo editável (necessário no layout src/)
+-e .
+
+# Pipeline
+requests==2.34.2
+pandas==3.1.1
+pyarrow==26.0.1
+duckdb==2.0.0
+pyyaml==6.0.3
+
+# Desenvolvimento
+pytest==9.2.0
+ruff==0.17.4

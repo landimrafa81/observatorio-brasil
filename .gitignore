@@ -1,0 +1,31 @@
+# Dados: gerados pelo pipeline, nunca versionados
+/data/
+*.parquet
+*.duckdb
+*.duckdb.wal
+
+# Segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+
+# Ferramentas
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editor e sistema
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
