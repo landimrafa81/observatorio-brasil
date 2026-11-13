@@ -7,6 +7,7 @@ pandas==3.1.1
 pyarrow==26.0.1
 duckdb==2.0.0
 pyyaml==6.0.3
+truststore==0.10.5
 
 # Desenvolvimento
 pytest==9.2.0
